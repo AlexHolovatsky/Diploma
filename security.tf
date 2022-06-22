@@ -1,3 +1,6 @@
+provider "aws" {
+  region = var.aws_reg
+}
 resource aws_security_group "web" {
   name        = "${var.stack}-webSG"
   description = "This is for ${var.stack}s web servers security group"
